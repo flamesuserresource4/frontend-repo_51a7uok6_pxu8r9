@@ -39,8 +39,7 @@ export default function Contact(){
             <input name="name" placeholder="Name" className="px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 text-white placeholder:text-blue-200/60 outline-none focus:ring-cyan-400/40" required/>
             <input name="email" type="email" placeholder="Email" className="px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 text-white placeholder:text-blue-200/60 outline-none focus:ring-cyan-400/40" required/>
           </div>
-          <textarea name="message" rows="5" placeholder="Say hi..." className="mt-4 w-full px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 text-white placeholder:text-blue-200/60 outline-none focus:ring-cyan-400/40" required/>
-          </textarea>
+          <textarea name="message" rows="5" placeholder="Say hi..." className="mt-4 w-full px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 text-white placeholder:text-blue-200/60 outline-none focus:ring-cyan-400/40" required></textarea>
           <div className="mt-4 flex items-center gap-3">
             <button className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold"><Send size={18}/> Send</button>
             <span className="text-sm text-blue-200/80">{status}</span>
