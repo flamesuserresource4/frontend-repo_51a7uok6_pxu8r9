@@ -1,14 +1,23 @@
 import Spline from '@splinetool/react-spline'
 import { motion } from 'framer-motion'
+import ErrorBoundary from './ErrorBoundary'
 
 export default function Hero3D() {
   const backend = import.meta.env.VITE_BACKEND_URL
   return (
     <section id="top" className="relative min-h-[90vh] flex items-center overflow-hidden">
-      <div className="absolute inset-0 opacity-30 pointer-events-none select-none">
-        {/* Free Spline scene placeholder (lightweight). You can replace with your own later. */}
-        <Spline scene="https://prod.spline.design/Jkz1XxTL3pQM1V3R/scene.splinecode" />
-      </div>
+      <ErrorBoundary
+        fallback={
+          <div className="absolute inset-0 pointer-events-none select-none">
+            <div className="w-full h-full bg-[radial-gradient(circle_at_20%_20%,_rgba(34,211,238,0.25),transparent_40%),radial-gradient(circle_at_80%_30%,_rgba(59,130,246,0.25),transparent_45%),radial-gradient(circle_at_50%_80%,_rgba(168,85,247,0.18),transparent_50%)]" />
+          </div>
+        }
+      >
+        <div className="absolute inset-0 opacity-30 pointer-events-none select-none">
+          {/* You can replace this with your own Spline scene URL later. If it fails to load, a soft gradient fallback is shown. */}
+          <Spline scene="https://prod.spline.design/6h3kQZkIcZ5i1tF1/scene.splinecode" />
+        </div>
+      </ErrorBoundary>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 py-28">
         <div className="text-center lg:text-left">
