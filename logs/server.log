@@ -1,0 +1,114 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 330 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.23.165:3000/
+11:19:10 PM [vite] Pre-transform error: Transform failed with 4 errors:
+/home/workspace/src/components/Contact.jsx:43:12: ERROR: Unexpected closing "textarea" tag does not match opening "form" tag
+/home/workspace/src/components/Contact.jsx:48:10: ERROR: Unexpected closing "form" tag does not match opening "div" tag
+/home/workspace/src/components/Contact.jsx:49:8: ERROR: Unexpected closing "div" tag does not match opening "section" tag
+/home/workspace/src/components/Contact.jsx:50:14: ERROR: Unterminated regular expression
+11:19:11 PM [vite] Internal server error: Transform failed with 4 errors:
+/home/workspace/src/components/Contact.jsx:43:12: ERROR: Unexpected closing "textarea" tag does not match opening "form" tag
+/home/workspace/src/components/Contact.jsx:48:10: ERROR: Unexpected closing "form" tag does not match opening "div" tag
+/home/workspace/src/components/Contact.jsx:49:8: ERROR: Unexpected closing "div" tag does not match opening "section" tag
+/home/workspace/src/components/Contact.jsx:50:14: ERROR: Unterminated regular expression
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Contact.jsx:43:12
+  
+  Unexpected closing "textarea" tag does not match opening "form" tag
+  41 |            </div>
+  42 |            <textarea name="message" rows="5" placeholder="Say hi..." className="mt-4 w-full px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 text-white placeholder:text-blue-200/60 outline-none focus:ring-cyan-400/40" required/>
+  43 |            </textarea>
+     |              ^
+  44 |            <div className="mt-4 flex items-center gap-3">
+  45 |              <button className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold"><Send size={18}/> Send</button>
+  
+  Unexpected closing "form" tag does not match opening "div" tag
+  46 |              <span className="text-sm text-blue-200/80">{status}</span>
+  47 |            </div>
+  48 |          </form>
+     |            ^
+  49 |        </div>
+  50 |      </section>
+  
+  Unexpected closing "div" tag does not match opening "section" tag
+  47 |            </div>
+  48 |          </form>
+  49 |        </div>
+     |          ^
+  50 |      </section>
+  51 |    )
+  
+  Unterminated regular expression
+  48 |          </form>
+  49 |        </div>
+  50 |      </section>
+     |                ^
+  51 |    )
+  52 |  }
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+11:19:31 PM [vite] Internal server error: Transform failed with 4 errors:
+/home/workspace/src/components/Contact.jsx:43:12: ERROR: Unexpected closing "textarea" tag does not match opening "form" tag
+/home/workspace/src/components/Contact.jsx:48:10: ERROR: Unexpected closing "form" tag does not match opening "div" tag
+/home/workspace/src/components/Contact.jsx:49:8: ERROR: Unexpected closing "div" tag does not match opening "section" tag
+/home/workspace/src/components/Contact.jsx:50:14: ERROR: Unterminated regular expression
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Contact.jsx:43:12
+  
+  Unexpected closing "textarea" tag does not match opening "form" tag
+  41 |            </div>
+  42 |            <textarea name="message" rows="5" placeholder="Say hi..." className="mt-4 w-full px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 text-white placeholder:text-blue-200/60 outline-none focus:ring-cyan-400/40" required/>
+  43 |            </textarea>
+     |              ^
+  44 |            <div className="mt-4 flex items-center gap-3">
+  45 |              <button className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold"><Send size={18}/> Send</button>
+  
+  Unexpected closing "form" tag does not match opening "div" tag
+  46 |              <span className="text-sm text-blue-200/80">{status}</span>
+  47 |            </div>
+  48 |          </form>
+     |            ^
+  49 |        </div>
+  50 |      </section>
+  
+  Unexpected closing "div" tag does not match opening "section" tag
+  47 |            </div>
+  48 |          </form>
+  49 |        </div>
+     |          ^
+  50 |      </section>
+  51 |    )
+  
+  Unterminated regular expression
+  48 |          </form>
+  49 |        </div>
+  50 |      </section>
+     |                ^
+  51 |    )
+  52 |  }
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
